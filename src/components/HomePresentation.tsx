@@ -15,27 +15,9 @@ export default function HomePresentation() {
     setShowButton(false)
   };
 
-  useEffect(() => {
-    const myVideo = document.getElementById('myVideo') as HTMLVideoElement;
-    if (myVideo !== null) {
-      const playPromise = myVideo.play();
-    
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          // El video comenzó a reproducirse
-        }).catch(() => {
-          // Si la reproducción automática falla, intenta reproducir tras una interacción del usuario
-          document.body.addEventListener('click', () => {
-            myVideo.play();
-          }, { once: true });
-        });
-      }
-    }
-  }, []);
-
   return (
     <div className="videoBox">
-      <video id="myVideo" src={crowVideo} autoPlay muted loop></video>
+      <video src={crowVideo} autoPlay muted loop></video>
       <div className="layerContainer">
         <h1 unselectable="on" className="animate__animated animate__fadeIn" style={{animation: 'fadeIn 5.5s'}} >RUINA</h1>
       </div>
