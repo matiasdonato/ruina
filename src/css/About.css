@@ -78,5 +78,26 @@
 }
 
 @media (max-width: 700px) { 
-    .kittenImage { opacity: 0; } 
+    .audioContainer{
+        height: 50px;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--sky-blue);
+        border-radius: 18px;
+        margin-bottom: 10px;
+    }
+    .audioContainer audio{
+        width: 90%;
+    }
+    .aboutBox{
+        width: 90%;
+    }
+    .aboutBox2 .infoContainer{
+        width: 87%;
+    }
+    .titleContainer{
+        width: 90%;
+    }
 }
