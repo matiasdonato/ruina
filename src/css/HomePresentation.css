@@ -1,0 +1,89 @@
+.videoBox{ 
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.videoBox video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.layerContainer{
+    background-color: black;
+    opacity: 0.98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+}
+
+.layerContainer h1{
+    color: #ffffff;
+    font-size: 18vw;
+    pointer-events: none;
+    user-select: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.arrowButton {
+    background-color:#d4d4d4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 1.7vh;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    animation: slide-up 1s forwards, blink 1.4s infinite;
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.invisible{
+    display: none;
+}
+
+.arrowButton img{
+    width: 100%;
+    height: 100%;
+}

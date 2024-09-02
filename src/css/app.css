@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+:root {
+    /* Negros */
+    --black: #000000;
+    --dark-grey: #2C2C2C;
+  
+    /* Blancos */
+    --white: #ffffff;
+  
+    /* Celestes */
+    --sky-blue: #00A8E1;
+    --light-sky-blue: #B3E0FF;
+}
+
+body{
+    background-color: var(--white);
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Hide the scrollbar arrows */
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+/* Remove the background */
+::-webkit-scrollbar-track {
+    background-color: #6c6c6c;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #151414;
+    border-radius: 5px;
+}
+
+/* Make the scrollbar thin */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+.appContainer{
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "DM Serif Display", serif;
+}
+
+p, a, span, li, ul, div, button, input, textarea{
+    font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+b{
+    font-family: "Signika Negative", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+a{
+    color: var(--sky-blue);
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: var(--light-sky-blue);
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    letter-spacing: 1rem
+}
+
+h2, h3 {
+    letter-spacing: 0.1rem;
+}
