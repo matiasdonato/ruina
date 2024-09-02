@@ -9,7 +9,7 @@ export default function About() {
       <div className="titleContainer" >
         <h2>Ruina</h2>
       </div>
-      <img className="kittenImage" src={kitten} alt="kitten" />
+      {/* <img className="kittenImage" src={kitten} alt="kitten" /> */}
       {/* <img src={kitten} alt="kitten" /> */}
       <div className="aboutBox" >
         <hr />
