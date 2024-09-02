@@ -95,4 +95,10 @@
     .videoBox video{
         display: none;
     }
+    .arrowButton{
+        display: none;
+    }
+    .videoBox{
+        height: 75vh;
+    }
 }

@@ -6,12 +6,12 @@ import kitten from "../assets/kitten.jpg"
 export default function About() {
   return (
     <div className="aboutBoxConatiner" >
-      <div className="titleContainer" >
+      <div className="titleContainer animate__animated animate__fadeIn" style={{animation: 'fadeIn 3.5s'}} >
         <h2>Ruina</h2>
       </div>
       {/* <img className="kittenImage" src={kitten} alt="kitten" /> */}
       {/* <img src={kitten} alt="kitten" /> */}
-      <div className="aboutBox" >
+      <div className="aboutBox animate__animated animate__fadeIn" style={{animation: 'fadeIn 3.5s'}} >
         <hr />
         <div className="infoContainer" id="about">
           <span><b>Ruina</b> es una banda de rock alternativo. También exploramos géneros como garage, post-punk, y shoegaze. Con influencias de bandas como Radiohead, The Strokes, Deftones, Sonic Youth, etc.</span>
